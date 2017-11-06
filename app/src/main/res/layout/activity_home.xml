@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/linkRelative"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    tools:context="com.example.lenovo.grandclient.HomeActivity">
+
+    <LinearLayout
+        android:id="@+id/homeTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="홈"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#FFFFFF"
+            />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_below="@+id/homeTitleBar"
+        android:id="@+id/home_logo"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:src="@drawable/splash_logo"
+        android:layout_marginTop="90dp" />
+
+    <Button
+        android:id="@+id/callButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/home_call_btn"
+        android:layout_below="@id/home_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="162dp"/>
+
+</RelativeLayout>

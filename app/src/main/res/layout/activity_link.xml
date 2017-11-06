@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFFFFF"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.example.lenovo.grandclient.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linkTitleBar"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/stroke"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:text="연동"
+            android:textColor="#000000"
+            android:textSize="17sp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="#FFFFFF"
+            />
+    </LinearLayout>
+
+
+    <ImageView
+        android:layout_below="@id/linkTitleBar"
+        android:id="@+id/splash_logo"
+        android:layout_width="111dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/splash_logo" />
+
+    <ImageView
+        android:id="@+id/notice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/splash_logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/grand_notice" />
+
+    <ImageView
+        android:id="@+id/number_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/notice"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/number_text" />
+
+    <EditText
+        android:id="@+id/partnerNumberEditText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/number_text"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:width="268dp"
+        android:height="50dp"
+        android:background="#F3F3F3"
+        android:drawableLeft="@drawable/phone"
+        android:drawablePadding="18dp"
+        android:paddingLeft="22dp"
+        android:textColorHint="#95989A"
+        android:textColor="#95989A"
+        android:hint="보호자 번호('-'제외)"
+        android:digits="0123456789"
+        android:inputType="number"
+        />
+
+    <ImageButton
+        android:id="@+id/sendButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partnerNumberEditText"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/selector" />
+
+</RelativeLayout>

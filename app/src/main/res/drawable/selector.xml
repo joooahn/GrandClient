@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:drawable="@drawable/grand_check_btn_gray" android:state_pressed="true" />
+
+    <!-- 위젯에 포커스가 와 있을때 이미지 -->
+
+
+    <item android:drawable="@drawable/grand_check_btn_gray" android:state_focused="true" />
+
+    <!-- 보통 상태 이미지 -->
+
+
+    <item android:drawable="@drawable/grand_check_btn" />
+
+</selector>
